@@ -1,0 +1,18 @@
+.ccm-imageslider tbody tr td p{
+	text-align:center;
+}
+.ccm-imageslider {
+	margin-top: 12px;
+	border: 2px solid #dedede;
+	padding: 12px 0px 0px 0px;
+}
+.ccm-imageslider tbody tr td{
+	vertical-align:middle;
+	text-align:center;
+}
+.ccm-imageslider tbody tr td img{
+	display:block;
+	margin:auto;
+	margin-bottom:10px;
+	cursor:pointer;
+}

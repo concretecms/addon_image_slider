@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<schema version="0.3">
+
+	<table name="btImageSlider">
+		<field name="bID" type="I">
+			<key />
+			<unsigned />
+		</field>
+		<field name="fsID" type="I"><unsigned /></field>
+		<field name="playbackLoop" type="I1" size="1">
+		  <NOTNULL/>
+		  <DEFAULT value="1"/>
+		</field>
+		<field name="playback" type="C" size="16"></field>
+		<field name="transitionType" type="C" size="16"></field>
+		<field name="controls" type="C" size="16"></field>
+		<field name="controlsPlacement" type="C" size="16"></field>
+		<field name="controlsPlayPause" type="I1" size="1">
+		  <NOTNULL/>
+		  <DEFAULT value="0"/>
+		</field>
+		<field name="autoplay" type="I1" size="1">
+		  <NOTNULL/>
+		  <DEFAULT value="0"/>
+		</field>
+		<field name="duration" type="N" size="4.2">
+		  <DEFAULT value="0.00"/>
+		</field>
+
+	</table>
+	
+	<table name="btImageSliderImg">
+		<field name="sliderImgId" type="I">
+			<key />
+			<autoincrement />
+			<unsigned />
+		</field>
+		<field name="bID" type="I"><unsigned /></field>
+		<field name="fID" type="I"><unsigned /></field>		
+		<field name="url" type="C" size="255"></field>
+		<field name="position" type="I"><unsigned /></field>	
+	</table>
+	
+</schema>
