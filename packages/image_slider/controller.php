@@ -6,7 +6,7 @@ class ImageSliderPackage extends Package {
 
 	protected $pkgHandle = 'image_slider';
 	protected $appVersionRequired = '5.3.2b1';
-	protected $pkgVersion = '1.0.2';
+	protected $pkgVersion = '1.1-devel';
 	
 	public function getPackageDescription() {
 		return t("Provides a full-featured image slider.");

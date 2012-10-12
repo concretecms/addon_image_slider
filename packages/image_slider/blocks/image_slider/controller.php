@@ -79,7 +79,10 @@ class ImageSliderBlockController extends BlockController {
 			$tmp = $image;
 			$f = File::getByID($image['fID']);
 			$tmp['f'] = $f;
-			$imageslider_json->{$tmp['fID']}->src 		= $f->getRelativePath();			
+			if (!isset($imageslider_json->{$tmp['fID']})) {
+				$imageslider_json->{$tmp['fID']} = new stdClass();
+			}
+			$imageslider_json->{$tmp['fID']}->src = $f->getRelativePath();			
 			$imageslider_json->meta->order[]=$tmp['fID'];
 			$image_info[] = $tmp;
 		}
